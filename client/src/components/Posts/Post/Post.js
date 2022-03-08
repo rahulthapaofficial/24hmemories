@@ -15,7 +15,6 @@ import moment from "moment";
 import useStyles from "./styles";
 
 const Post = ({ post }) => {
-  console.log(post);
   const classes = useStyles();
   return (
     <Card className={classes.card}>
@@ -45,7 +44,7 @@ const Post = ({ post }) => {
           {post.message}
         </Typography>
       </CardContent>
-      <CardActions className={classes.actions}>
+      <CardActions className={classes.cardActions}>
         <Button size="small" color="primary" onClick={() => {}}>
           <ThumbUpAltIcon fontSize="small" />
           Like
